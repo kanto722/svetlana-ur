@@ -70,7 +70,7 @@
             </div>
         </div>
     </header>
-    <section class="promo">
+    <section class="promo" style="display: none;">
         <img src="/svetlana-ur/images/promo-img.png" alt="люди">
         <div class="wrap">
             <div class="promo-content">
@@ -91,7 +91,7 @@
             </div>
         </div>
     </section>
-    <section class="key">
+    <section class="key" style="display: none;">
         <img src="/svetlana-ur/images/time-img.png" alt="фон">
         <div class="wrap">
             <div class="key-comfort">
@@ -176,7 +176,7 @@
             </div>
         </div> 
     </section>
-     <section class="reviews">
+     <section class="reviews" style="display: none;">
         <div class="wrap">
             <div class="reviews-content">
                 <img src="/svetlana-ur/images/svg/otsv.svg" alt="отзыв">
@@ -232,7 +232,7 @@
             <h3>КАЧЕСТВО</h3>
         </div>
      </section>
-     <section class="consult">
+     <section class="consult" style="display: none;">
         <div class="wrap">
             <div class="consult-content">
                 <div class="consult-info">
@@ -249,7 +249,7 @@
             </div>
         </div>
      </section>
-     <section class="team">
+     <section class="team" style="display: none;">
         <div class="wrap">
             <h2>Наша команда специалистов</h2>
             <div class="team-container">
@@ -290,7 +290,7 @@
             </div>
         </div>
      </section>
-     <section class="dolg">
+     <section class="dolg" style="display: none;">
         <div class="wrap">
             <h2>Мы действительно избавим вас от долгов</h2>
             <div class="dolg-content">
@@ -333,7 +333,7 @@
             </div>
         </div>
      </section>
-     <section class="primer">
+     <section class="primer" style="display: none;">
         <div class="wrap">
             <h2>Примеры списания долгов</h2>
             <div class="primer-content">
@@ -391,7 +391,7 @@
             </div>
         </div>
      </section>
-     <section class="unknow">
+     <section class="unknow" style="display: none;">
         <div class="wrap">
             <h2>Вопрос-ответ</h2>
             <div class="unknow-content">
@@ -518,11 +518,135 @@
             </div>
         </div>
      </section>
+     <section class="price" style="display: none;">
+        <div class="wrap">
+            <div class="container">
+                <h2>Расчитать стоимость</h2>
+                <form class="range">
+                    <div class="form-group range__slider">
+                        <p>Сумма задолженности, руб.</p>
+                    <div class="form-group range__value">
+                        <input type="text" value="0">            
+                    </div><!--/form-group-->
+                    <input type="range" step="100">
+                    </div><!--/form-group-->
+                    <div class="price-sobst">
+                        <p>Наличие имущества в собственности </p>
+                        <div class="price-sobst__radio">
+                           <div class="price-sobst__radio-block">
+                                <input type="radio">
+                                <p>Да</p>
+                           </div>
+                           <div class="price-sobst__radio-block">
+                                <input type="radio">
+                                <p>Нет</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-credit">
+                        <p>Наличие ипотеки или автокредита</p>
+                        <div class="price-credit__radio">
+                            <div class="price-credit__radio-block">
+                                <input type="radio">
+                                <p>Да</p>
+                            </div>
+                            <div class="price-credit__radio-block">
+                                <input type="radio">
+                                <p>Нет</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-form">
+                        <p>Ваше Имя</p>
+                        <input type="text" placeholder="Напишите Ваше Имя">
+                        <p>Ваше Телефон</p>
+                        <input type="number" placeholder="8 (___) ___ __-__">
+                    </div>
+                    <input type="submit" name="send" placeholder="расчитать стоимость">
+                    <p>Отправляя персональные данные, вы соглашаетесь с<a href="#"> политикой конфиденциальности сайта</a></p>
+                </form>
+                </div><!--/container-->
+            </div>
+        </section>
+        <section class="zayavk" style="display: none;">
+            <div class="wrap">
+                <div class="zayavk-container">
+                    <div class="zayavk-content">
+                            <h2>Оставьте заявку на бесплатную консультацию</h2>
+                            <div class="line"></div>
+                        <div class="zayavk-content-form">
+                            <p>Свяжитесь с юристом по телефону <a href="tel:78432042886">+7 (843) 204-28-86</a> или закажите обратный звонок</p>
+                            <form action="#" class="zayavk-forma">
+                                <p>Ваше Имя</p>
+                                <input type="text" placeholder="Напишите Ваше Имя">
+                                <p>Ваш телефон</p>
+                                <input type="number" placeholder="8 (___) ___ __-__">
+                                <input type="submit" name="send">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="zayavk-img">
+                        <img src="/svetlana-ur/images/zayavk.jpg" alt="руки">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="maps" style="display: none;" >
+            <div class="maps-block">
+                <div class="maps-block-wrap"></div>
+                <div class="maps-block-content">
+                    <div class="maps-adress">
+                        <img src="/svetlana-ur/images/svg/map-itemDrop.svg" alt="значок">
+                        <div class="maps-adress-text">
+                            <span>Наш адрес:</span>
+                            <p> 420044, РТ, г.Казань,<br>пр. Ибрагимова, д.39, пом. 1101</p>
+                            <p>Остановка «Коллективная»</p>
+                            <p>«Первый юридический центр Казани»</p>
+                        </div>
+                    </div>
+                    <div class="maps-phone">
+                        <img src="/svetlana-ur/images/svg/phone-item.svg" alt="телефон">
+                        <div class="maps-phone-text">
+                            <span>Телефон:</span>
+                            <a href="tel:78432042886">+7 (843) 204-28-86</a>
+                        </div>
+                    </div>
+                    <div class="maps-email">
+                        <img src="/svetlana-ur/images/svg/map-itemDrop.svg" alt="почта">
+                        <div class="maps-email-text">
+                            <span>Электронная почта:</span>
+                            <a href="malito:cvkazan@yandex.ru">cvkazan@yandex.ru</a>
+                        </div>
+                    </div>
+                    <div class="maps-times">
+                        <span>Режим работы:</span>
+                        <p>Понедельник - Пятница: 9.00 – 19.00</p>
+                        <p>Суббота: 10.00  – 15.00</p>
+                        <p>Воскресенье: Выходной</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-
+    <footer class="footer" style="display: none;">
+        <div class="wrap">
+            <div class="footer-content">
+                <h3>Все права защищены © 2021 Юридические услуги в Казани</h3>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="wrap">
+                <div class="footer-block">
+                    <p>ООО “Суть вопроса”</p>
+                    <p>ОГРН: 1191690068074</p>
+                    <p>Политика конфиденциальности </p>
+                    <p>© 2021 - ira_shine_webdesign</p>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/svetlana-ur/js/script.js"></script>
 </body>
 </html>
