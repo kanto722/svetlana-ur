@@ -1626,3 +1626,11 @@ text-decoration: underline;
   transition: 0.4s;
 
 }
+
+.header-nav-adapt {
+  display: none;
+}
+
+@media screen and (max-width: 1350px) {
+
+}
