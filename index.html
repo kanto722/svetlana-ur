@@ -27,11 +27,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- *bottom line in iphone -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/svetlana-ur/css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> 
+    <link rel="stylesheet" href="/svetlana-ur/css/jquery.fancybox.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -39,40 +41,40 @@
         <div class="wrap">
             <div class="header-content">
                 <div class="header-logo">
-                    <img src="/images/svg/header-logo.svg" alt="лого">
+                    <a href="/"><img src="/svetlana-ur/images/svg/header-logo.svg" alt="лого"></a>
                     <div class="header-logo-name">
                         <p>Юридическая фирма ООО “Суть вопроса” </p>
                     </div>
                     <div class="header-logo-adress">
-                        <img src="/images/svg/map-item.svg" alt="адрес">
-                        <div class="logo-adress-column">
+                        <img src="/svetlana-ur/images/svg/map-item.svg" alt="адрес">
+                        <a href="#maps" class="logo-adress-column">
                             <span>г. Казань</span>
                             <p>пр. Ибрагимова, д.39</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="header-nav">
-                    <a href="#">О нас</a>
-                    <a href="#">Отзывы</a>
-                    <a href="#">Контакты</a>
+                    <a href="#amoung">О нас</a>
+                    <a href="#reviews">Отзывы</a>
+                    <a href="#contact">Контакты</a>
                 </div>
                 <div class="header-dop">
                     <div class="header-dop-contact">
-                        <img src="/images/svg/phone-item.svg" alt="телефон">
+                        <img src="/svetlana-ur/images/svg/phone-item.svg" alt="телефон">
                         <div class="dop-contact-column">
                             <a href="tel:78432042886">+7 (843) 204-28-86</a>
                             <p>Пн-Пт 9:00 - 19:00, Сб - 10:00-15:00</p>
                         </div>
                     </div>
-                    <div class="header-dop-btn">
-                        <a href="#">Заказать звонок</a>
+                    <div class="header-dop-btn" onclick="openPopup();">
+                        <a>Заказать звонок</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <section class="promo">
-        <!-- <img src="/images/promo-img.png" alt="люди"> -->
+        <!-- <img src="/svetlana-ur/images/promo-img.png" alt="люди"> -->
         <div class="wrap">
             <div class="promo-content">
                 <h1>Банкротство физических лиц в Казани</h1>
@@ -93,7 +95,7 @@
         </div>
     </section>
     <section class="key">
-        <!-- <img src="/images/time-img.png" alt="фон"> -->
+        <!-- <img src="/svetlana-ur/images/time-img.png" alt="фон"> -->
         <div class="wrap">
             <div class="key-comfort">
                 <h2>С нами просто и удобно</h2>
@@ -101,7 +103,7 @@
                     <div class="comfort-item">
                         <div class="comfort-wrap">
                             <div class="comfort-item__title">
-                                <img src="/images/svg/key-doc.svg" alt="докумен">
+                                <img src="/svetlana-ur/images/svg/key-doc.svg" alt="докумен">
                                 <span>Работа «под ключ» от сбора документов до решения суда</span>
                             </div>
                             <div class="comfort-item__text">
@@ -112,7 +114,7 @@
                     <div class="comfort-item">
                         <div class="comfort-wrap">
                             <div class="comfort-item__title">
-                                <img src="/images/svg/doc-upd.svg" alt="докумен">
+                                <img src="/svetlana-ur/images/svg/doc-upd.svg" alt="докумен">
                                 <span>Бесплатная консультация о банкротстве физических лиц</span>
                             </div>
                             <div class="comfort-item__text">
@@ -123,7 +125,7 @@
                     <div class="comfort-item">
                         <div class="comfort-wrap">
                             <div class="comfort-item__title">
-                                <img src="/images/svg/doc-human.svg" alt="докумен">
+                                <img src="/svetlana-ur/images/svg/doc-human.svg" alt="докумен">
                                 <span>Персональный юрист на всю процедуру от начала до конца</span>
                             </div>
                             <div class="comfort-item__text">
@@ -195,7 +197,7 @@
      <section class="reviews" style="display: none;">
         <div class="wrap">
             <div class="reviews-content">
-                <img src="/images/svg/otsv.svg" alt="отзыв">
+                <img src="/svetlana-ur/images/svg/otsv.svg" alt="отзыв">
                 <h2>Отзывы клиентов</h2>
             </div>
             <!-- Slider main container -->
@@ -206,33 +208,33 @@
                 <div class="swiper-slide">
                     <a href="#" class="reviews-item">
                         <div class="reviews-item__img">
-                            <img src="/images/otsv-img.jpg" alt="отзыв">
+                            <img src="/svetlana-ur/images/otsv-img.jpg" alt="отзыв">
                         </div>
-                        <img src="/images/svg/yout-item.svg" alt="ютуб">
+                        <img src="/svetlana-ur/images/svg/yout-item.svg" alt="ютуб">
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="#" class="reviews-item">
                         <div class="reviews-item__img">
-                            <img src="/images/otsv-img.jpg" alt="отзыв">
+                            <img src="/svetlana-ur/images/otsv-img.jpg" alt="отзыв">
                         </div>
-                        <img src="/images/svg/yout-item.svg" alt="ютуб">
+                        <img src="/svetlana-ur/images/svg/yout-item.svg" alt="ютуб">
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="#" class="reviews-item">
                         <div class="reviews-item__img">
-                            <img src="/images/otsv-img.jpg" alt="отзыв">
+                            <img src="/svetlana-ur/images/otsv-img.jpg" alt="отзыв">
                         </div>
-                        <img src="/images/svg/yout-item.svg" alt="ютуб">
+                        <img src="/svetlana-ur/images/svg/yout-item.svg" alt="ютуб">
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="#" class="reviews-item">
                         <div class="reviews-item__img">
-                            <img src="/images/otsv-img.jpg" alt="отзыв">
+                            <img src="/svetlana-ur/images/otsv-img.jpg" alt="отзыв">
                         </div>
-                        <img src="/images/svg/yout-item.svg" alt="ютуб">
+                        <img src="/svetlana-ur/images/svg/yout-item.svg" alt="ютуб">
                     </a>
                 </div>
                 </div>
@@ -254,22 +256,22 @@
                     <h2>Получите консультацию<br> профессионального юриста</h2>
                     <div class="line"></div>
                     <p>Свяжитесь с юристом по телефону<a href="tel:73452902735">+7 (3452) 90-27-35</a> или закажите обратный звонок</p>
-                    <div class="consult-info-btn">
+                    <div class="consult-info-btn" onclick="openPopup();">
                         <p>Заказать консультацию</p>
                     </div>
                 </div>
                 <div class="consult-img">
-                    <img src="/images/consult.png" alt="консультация">
+                    <img src="/svetlana-ur/images/consult.png" alt="консультация">
                 </div>
             </div>
         </div>
      </section>
-     <section class="team">
+     <section class="team" id="amoung">
         <div class="wrap">
             <h2 class="team-title">Наша команда специалистов</h2>
             <div class="team-container">
                 <div class="team-item">
-                    <img src="/images/team1.jpg" alt="девушка">
+                    <img src="/svetlana-ur/images/team1.jpg" alt="девушка">
                     <h3>Кайгородова Ольга Владимировна</h3>
                     <span>Руководитель</span>
                     <li>Генеральный директор ООО «Суть вопроса»</li>
@@ -278,7 +280,7 @@
                     <li>Высшее юридическое образование получила в Казанском социально-юридическом институте</li>
                 </div>
                 <div class="team-item">
-                    <img src="/images/team2.jpg" alt="девушка">
+                    <img src="/svetlana-ur/images/team2.jpg" alt="девушка">
                     <h3>Писарев Артём Александрович</h3>
                     <span>Руководитель юридического отдела</span>
                     <li>Опыт практической работы юристом более 18 лет</li>
@@ -287,7 +289,7 @@
                     <li>Высшее юридическое образование получил в Казанском юридическом институте МВД РФ</li>
                 </div>
                 <div class="team-item">
-                    <img src="/images/team3.jpg" alt="девушка">
+                    <img src="/svetlana-ur/images/team3.jpg" alt="девушка">
                     <h3>Погосова Дарья Алексеевна</h3>
                     <span>Специалист по семейному, трудовому и корпоративному праву</span>
                     <li>Более 8 лет успешной юридической практики</li>
@@ -295,7 +297,7 @@
                     <li>Окончила Самарский государственный университет и Тольяттинский государственный университет</li>
                 </div>
                 <div class="team-item">
-                    <img src="/images/team4.jpg" alt="девушка">
+                    <img src="/svetlana-ur/images/team4.jpg" alt="девушка">
                     <h3>Писарев Тимур Александрович</h3>
                     <span>Отстаивает интересы граждан в сфере защиты прав потребителей, жилищного  и корпоративного права</span>
                     <li>Опыт работы юристом более 23 лет</li>
@@ -348,12 +350,12 @@
             </div>
         </div>
      </section>
-     <section class="primer">
+     <section class="primer" id="reviews">
         <div class="wrap">
             <h2 class="primer-title">Примеры списания долгов</h2>
             <div class="primer-content">
                 <div class="primer-item">
-                    <a href="#"><img src="/images/docum-img.jpg" alt="документ"></a>
+                    <a class="fancybox" rel="gallery" href="/svetlana-ur/images/docum-img_bg.jpg"><img src="/svetlana-ur/images/docum-img.jpg" alt="документ"></a>
                     <div class="primer-item-text">
                         <span>Клиент:</span>
                         <p>Ленчук Елена</p>
@@ -364,13 +366,13 @@
                     <div class="primer-item-dolg">
                         <p>Долг после: 0 руб.</p>
                     </div>
-                    <a href="#" class="primer-item-sud">
+                    <!-- <a class="primer-item-sud">
                         <p>Смотреть на сайте суда </p>
-                        <img src="/images/svg/arrow.svg" alt="стрелка">
-                    </a>
+                        <img src="/svetlana-ur/images/svg/arrow.svg" alt="стрелка">
+                    </a> -->
                 </div>
                 <div class="primer-item">
-                    <a href="#"><img src="/images/docum-img.jpg" alt="документ"></a>
+                    <a class="fancybox" rel="gallery" href="/svetlana-ur/images/docum-img-2_bg.jpg"><img src="/svetlana-ur/images/docum-img-2.jpg" alt="документ"></a>
                     <div class="primer-item-text">
                         <span>Клиент:</span>
                         <p>Ленчук Елена</p>
@@ -381,179 +383,33 @@
                     <div class="primer-item-dolg">
                         <p>Долг после: 0 руб.</p>
                     </div>
-                    <a href="#" class="primer-item-sud">
+                    <!-- <a href="#" class="primer-item-sud">
                         <p>Смотреть на сайте суда </p>
-                        <img src="/images/svg/arrow.svg" alt="стрелка">
-                    </a>
-                </div>
-                <div class="primer-item">
-                    <a href="#"><img src="/images/docum-img.jpg" alt="документ"></a>
-                    <div class="primer-item-text">
-                        <span>Клиент:</span>
-                        <p>Ленчук Елена</p>
-                    </div>
-                    <div class="primer-item-do">
-                        <p>Долг до: 861 450 руб.</p>
-                    </div>
-                    <div class="primer-item-dolg">
-                        <p>Долг после: 0 руб.</p>
-                    </div>
-                    <a href="#" class="primer-item-sud">
-                        <p>Смотреть на сайте суда </p>
-                        <img src="/images/svg/arrow.svg" alt="стрелка">
-                    </a>
+                        <img src="/svetlana-ur/images/svg/arrow.svg" alt="стрелка">
+                    </a> -->
                 </div>
             </div>
         </div>
      </section>
-     <section class="unknow">
-        <div class="wrap">
-            <h2 class="unknow-title">Вопрос-ответ</h2>
-            <div class="unknow-content">
-                <div class="unknow-item">
-                    <img src="/images/svg/unknow-item.svg" alt="книжка">
-                    <div class="unknow-item-block">
-                        <p>Кто может признать себя банкротом?</p>
-                        <div class="line2"></div>
-                        <a class="unknow-link" href="#">
-                            <p>Подробнее</p>
-                            <img src="/images/svg/arrow.svg" alt="стрелка">
-                        </a>
-                    </div>
-                    <div class="unknow-drop">
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Имеете задолженность по кредиту?</p>
-                        </div>
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Продолжаете оплачивать свои счета, но долг не просто не уменьшается, но и продолжает расти?</p>
-                        </div>
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Исправно платили кредиты, но сложная финансовая ситуация больше не позволяет этого делать?</p>
-                        </div>
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Банк продал долг коллекторам?</p>
-                        </div>
-                        <p>С 1 октября 2015 года любой гражданин Российской Федерации, который не в силах исполнять свои долговые обязательства, на законных основаниях может признать себя банкротом.</p>
-                    </div>
-                </div>
-                <div class="unknow-item">
-                    <img src="/images/svg/unknow-item2.svg" alt="книжка">
-                    <div class="unknow-item-block">
-                        <p>Как признать себя банкротом физическому лицу в 2020 году?</p>
-                        <div class="line2"></div>
-                        <a class="unknow-link" href="#">
-                            <p>Подробнее</p>
-                            <img src="/images/svg/arrow.svg" alt="стрелка">
-                        </a>
-                    </div>
-                    <div class="unknow-drop">
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Имеете задолженность по кредиту?</p>
-                        </div>
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Продолжаете оплачивать свои счета, но долг не просто не уменьшается, но и продолжает расти?</p>
-                        </div>
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Исправно платили кредиты, но сложная финансовая ситуация больше не позволяет этого делать?</p>
-                        </div>
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Банк продал долг коллекторам?</p>
-                        </div>
-                        <p>С 1 октября 2015 года любой гражданин Российской Федерации, который не в силах исполнять свои долговые обязательства, на законных основаниях может признать себя банкротом.</p>
-                    </div>
-                </div>
-                <div class="unknow-item">
-                    <img src="/images/svg/unknow-item3.svg" alt="книжка">
-                    <div class="unknow-item-block">
-                        <p>Процедура банкротства физического лица</p>
-                        <div class="line2"></div>
-                        <a class="unknow-link" href="#">
-                            <p>Подробнее</p>
-                            <img src="/images/svg/arrow.svg" alt="стрелка">
-                        </a>
-                    </div>
-                    <div class="unknow-drop">
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Имеете задолженность по кредиту?</p>
-                        </div>
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Продолжаете оплачивать свои счета, но долг не просто не уменьшается, но и продолжает расти?</p>
-                        </div>
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Исправно платили кредиты, но сложная финансовая ситуация больше не позволяет этого делать?</p>
-                        </div>
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Банк продал долг коллекторам?</p>
-                        </div>
-                        <p>С 1 октября 2015 года любой гражданин Российской Федерации, который не в силах исполнять свои долговые обязательства, на законных основаниях может признать себя банкротом.</p>
-                    </div>
-                </div>
-                <div class="unknow-item">
-                    <img src="/images/svg/unknow-item4.svg" alt="книжка">
-                    <div class="unknow-item-block">
-                        <p>Банкротство - простое решение сложных проблем</p>
-                        <div class="line2"></div>
-                        <a class="unknow-link" href="#">
-                            <p>Подробнее</p>
-                            <img src="/images/svg/arrow.svg" alt="стрелка">
-                        </a>
-                    </div>
-                    <div class="unknow-drop">
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Имеете задолженность по кредиту?</p>
-                        </div>
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Продолжаете оплачивать свои счета, но долг не просто не уменьшается, но и продолжает расти?</p>
-                        </div>
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Исправно платили кредиты, но сложная финансовая ситуация больше не позволяет этого делать?</p>
-                        </div>
-                        <div class="unknow-drop-elem">
-                            <img src="/images/svg/info-Drop.svg" alt="инфо">
-                            <p>Банк продал долг коллекторам?</p>
-                        </div>
-                        <p>С 1 октября 2015 года любой гражданин Российской Федерации, который не в силах исполнять свои долговые обязательства, на законных основаниях может признать себя банкротом.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
-     <section class="price" style="display: none;">
+     <section class="price">
         <div class="wrap">
             <div class="container">
                 <h2>Расчитать стоимость</h2>
                 <form class="range">
                     <div class="form-group range__slider">
                         <p>Сумма задолженности, руб.</p>
-                    <div class="form-group range__value">
-                        <input type="text" value="0">            
-                    </div><!--/form-group-->
-                    <input type="range" step="100">
+                        <input class="input-value" type="text" id="i1" value="30000">
+                        <input class="input-polz" type="range" id="r1" min="0" max="75000" step="100"  oninput="fun1()">
                     </div><!--/form-group-->
                     <div class="price-sobst">
-                        <p>Наличие имущества в собственности </p>
+                        <p>Наличие имущества в собственности</p>
                         <div class="price-sobst__radio">
                            <div class="price-sobst__radio-block">
-                                <input type="radio">
+                                <input type="radio" name="group1">
                                 <p>Да</p>
                            </div>
                            <div class="price-sobst__radio-block">
-                                <input type="radio">
+                                <input type="radio" name="group1">
                                 <p>Нет</p>
                             </div>
                         </div>
@@ -562,11 +418,11 @@
                         <p>Наличие ипотеки или автокредита</p>
                         <div class="price-credit__radio">
                             <div class="price-credit__radio-block">
-                                <input type="radio">
+                                <input type="radio" name="group2">
                                 <p>Да</p>
                             </div>
                             <div class="price-credit__radio-block">
-                                <input type="radio">
+                                <input type="radio" name="group2">
                                 <p>Нет</p>
                             </div>
                         </div>
@@ -577,12 +433,139 @@
                         <p>Ваше Телефон</p>
                         <input type="number" placeholder="8 (___) ___ __-__">
                     </div>
-                    <input type="submit" name="send" placeholder="расчитать стоимость">
-                    <p>Отправляя персональные данные, вы соглашаетесь с<a href="#"> политикой конфиденциальности сайта</a></p>
+                    <input class="input-send-price" type="submit" name="send" value="Расчитать стоимость">
+                    <p class="policy-price">Отправляя персональные данные, вы соглашаетесь с<a href="#"> политикой конфиденциальности сайта</a></p>
                 </form>
                 </div><!--/container-->
             </div>
         </section>
+     <section class="unknow">
+        <div class="wrap">
+            <h2 class="unknow-title">Вопрос-ответ</h2>
+            <div class="unknow-content">
+                <div class="unknow-item" onclick="openDrop(this);">
+                    <img src="/svetlana-ur/images/svg/unknow-item.svg" alt="книжка">
+                    <div class="unknow-item-block">
+                        <p>Кто может признать себя банкротом?</p>
+                        <div class="line2"></div>
+                        <a class="unknow-link">
+                            <p>Подробнее</p>
+                            <img class="rotate" src="/svetlana-ur/images/svg/arrow.svg" alt="стрелка">
+                        </a>
+                    </div>
+                    <div class="unknow-drop">
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Имеете задолженность по кредиту?</p>
+                        </div>
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Продолжаете оплачивать свои счета, но долг не просто не уменьшается, но и продолжает расти?</p>
+                        </div>
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Исправно платили кредиты, но сложная финансовая ситуация больше не позволяет этого делать?</p>
+                        </div>
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Банк продал долг коллекторам?</p>
+                        </div>
+                        <p>С 1 октября 2015 года любой гражданин Российской Федерации, который не в силах исполнять свои долговые обязательства, на законных основаниях может признать себя банкротом.</p>
+                    </div>
+                </div>
+                <div class="unknow-item" onclick="openDrop(this);">
+                    <img src="/svetlana-ur/images/svg/unknow-item2.svg" alt="книжка">
+                    <div class="unknow-item-block">
+                        <p>Как признать себя банкротом физическому лицу в 2020 году?</p>
+                        <div class="line2"></div>
+                        <a class="unknow-link">
+                            <p>Подробнее</p>
+                            <img class="rotate" src="/svetlana-ur/images/svg/arrow.svg" alt="стрелка">
+                        </a>
+                    </div>
+                    <div class="unknow-drop">
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Имеете задолженность по кредиту?</p>
+                        </div>
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Продолжаете оплачивать свои счета, но долг не просто не уменьшается, но и продолжает расти?</p>
+                        </div>
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Исправно платили кредиты, но сложная финансовая ситуация больше не позволяет этого делать?</p>
+                        </div>
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Банк продал долг коллекторам?</p>
+                        </div>
+                        <p>С 1 октября 2015 года любой гражданин Российской Федерации, который не в силах исполнять свои долговые обязательства, на законных основаниях может признать себя банкротом.</p>
+                    </div>
+                </div>
+                <div class="unknow-item" onclick="openDrop(this);">
+                    <img src="/svetlana-ur/images/svg/unknow-item3.svg" alt="книжка">
+                    <div class="unknow-item-block">
+                        <p>Процедура банкротства физического лица</p>
+                        <div class="line2"></div>
+                        <a class="unknow-link">
+                            <p>Подробнее</p>
+                            <img class="rotate" src="/svetlana-ur/images/svg/arrow.svg" alt="стрелка">
+                        </a>
+                    </div>
+                    <div class="unknow-drop">
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Имеете задолженность по кредиту?</p>
+                        </div>
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Продолжаете оплачивать свои счета, но долг не просто не уменьшается, но и продолжает расти?</p>
+                        </div>
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Исправно платили кредиты, но сложная финансовая ситуация больше не позволяет этого делать?</p>
+                        </div>
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Банк продал долг коллекторам?</p>
+                        </div>
+                        <p>С 1 октября 2015 года любой гражданин Российской Федерации, который не в силах исполнять свои долговые обязательства, на законных основаниях может признать себя банкротом.</p>
+                    </div>
+                </div>
+                <div class="unknow-item" onclick="openDrop(this);">
+                    <img src="/svetlana-ur/images/svg/unknow-item4.svg" alt="книжка">
+                    <div class="unknow-item-block">
+                        <p>Банкротство - простое решение сложных проблем</p>
+                        <div class="line2"></div>
+                        <a class="unknow-link">
+                            <p>Подробнее</p>
+                            <img class="rotate" src="/svetlana-ur/images/svg/arrow.svg" alt="стрелка">
+                        </a>
+                    </div>
+                    <div class="unknow-drop">
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Имеете задолженность по кредиту?</p>
+                        </div>
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Продолжаете оплачивать свои счета, но долг не просто не уменьшается, но и продолжает расти?</p>
+                        </div>
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Исправно платили кредиты, но сложная финансовая ситуация больше не позволяет этого делать?</p>
+                        </div>
+                        <div class="unknow-drop-elem">
+                            <img src="/svetlana-ur/images/svg/info-Drop.svg" alt="инфо">
+                            <p>Банк продал долг коллекторам?</p>
+                        </div>
+                        <p>С 1 октября 2015 года любой гражданин Российской Федерации, который не в силах исполнять свои долговые обязательства, на законных основаниях может признать себя банкротом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
         <section class="zayavk">
             <div class="wrap">
                 <div class="zayavk-container">
@@ -601,67 +584,101 @@
                         </div>
                     </div>
                     <div class="zayavk-img">
-                        <img src="/images/zayavk.jpg" alt="руки">
+                        <img src="/svetlana-ur/images/zayavk.jpg" alt="руки">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="maps" style="display: none;" >
+        <section class="maps" id="maps">
+            <div class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1e85e9c87dbe9d196df76745a39b858b259574aab14dcd4f29f707fb88cbbc95&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
             <div class="maps-block">
-                <div class="maps-block-wrap"></div>
-                <div class="maps-block-content">
+                <div class="maps-wrap">
                     <div class="maps-adress">
-                        <img src="/images/svg/map-itemDrop.svg" alt="значок">
+                        <img src="/svetlana-ur/images/svg/map-itemDrop.svg" alt="иконка">
                         <div class="maps-adress-text">
                             <span>Наш адрес:</span>
-                            <p> 420044, РТ, г.Казань,<br>пр. Ибрагимова, д.39, пом. 1101</p>
-                            <p>Остановка «Коллективная»</p>
-                            <p>«Первый юридический центр Казани»</p>
+                            <p>420044, РТ, г.Казань,<br> пр. Ибрагимова, д.39, пом. 1101<br> Остановка «Коллективная» <br>«Первый юридический центр Казани»</p>
                         </div>
                     </div>
                     <div class="maps-phone">
-                        <img src="/images/svg/phone-item.svg" alt="телефон">
+                        <img src="/svetlana-ur/images/svg/phone-Drop.svg" alt="иконка">
                         <div class="maps-phone-text">
                             <span>Телефон:</span>
                             <a href="tel:78432042886">+7 (843) 204-28-86</a>
                         </div>
                     </div>
-                    <div class="maps-email">
-                        <img src="/images/svg/map-itemDrop.svg" alt="почта">
-                        <div class="maps-email-text">
+                    <div class="maps-mail">
+                        <img src="/svetlana-ur/images/svg/mail-item.svg" alt="иконка">
+                        <div class="maps-mail-text">
                             <span>Электронная почта:</span>
-                            <a href="malito:cvkazan@yandex.ru">cvkazan@yandex.ru</a>
+                            <a target="_blank" href="malito:cvkazan@yandex.ru">cvkazan@yandex.ru</a>
                         </div>
                     </div>
-                    <div class="maps-times">
+                    <div class="maps-rezhim">
                         <span>Режим работы:</span>
-                        <p>Понедельник - Пятница: 9.00 – 19.00</p>
-                        <p>Суббота: 10.00  – 15.00</p>
-                        <p>Воскресенье: Выходной</p>
+                        <p>Понедельник - Пятница: 9.00 – 19.00 <br> Суббота: 10.00  – 15.00 <br> Воскресенье: Выходной</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="navigation" id="contact">
+            <div class="wrap">
+                <div class="navigation-container">
+                    <div class="navigation-link">
+                        <a href="#">О компании</a>
+                        <a href="#reviews">Отзывы</a>
+                        <a href="#">Задать вопрос</a>
+                        <a href="#">Услуги для бизнеса</a>
+                    </div>
+                    <div class="navigation-text">
+                        <p>Все права защищены © 2021 Юридические услуги в Казани</p>
+                    </div>
+                    <div class="navigation-tel">
+                        <a href="tel:78432042886">+7 (843) 204-28-86</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popup">
+            <div class="wrap">
+                <div class="popup-container">
+                    <img src="/svetlana-ur/images/modal.jpg" alt="девушка">
+                    <div class="popup-text">
+                        <h3>Оставьте заявку на бесплатную консультацию юриста</h3>
+                        <p>Мы свяжемся с вами в течение часа</p>
+                    </div>
+                    <div class="popup-input">
+                        <input class="popup-name" type="text" placeholder="Ваше имя">
+                        <input class="popup-phone" type="text" placeholder="Телефон">
+                        <input class="popup-send" type="submit" vulue="Бесплатная консультация юриста">
+                        <div class="popup-input-check">
+                            <input type="checkbox">
+                            <p>Нажимая на кнопку, я принимаю условия <a href="#">соглашения</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-    <footer class="footer" style="display: none;">
-        <div class="wrap">
-            <div class="footer-content">
-                <h3>Все права защищены © 2021 Юридические услуги в Казани</h3>
-            </div>
-        </div>
-        <div class="footer-container">
-            <div class="wrap">
-                <div class="footer-block">
-                    <p>ООО “Суть вопроса”</p>
-                    <p>ОГРН: 1191690068074</p>
-                    <p>Политика конфиденциальности </p>
-                    <p>© 2021 - ira_shine_webdesign</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <script src="/svetlana-ur/js/jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/js/script.js"></script>
+    <script src="/svetlana-ur/js/jquery.fancybox.min.js"></script>
+    <script src="/svetlana-ur/js/aos.js"></script>
+    <script src="/svetlana-ur/js/script.js"></script>
+
+    <script>
+        function fun1() {
+        var rng=document.getElementById('r1'); //rng - это ползунок
+        var i1=document.getElementById('i1'); // i1 - input
+        i1.value=rng.value;
+        }
+    </script>
+
+ 
+
+
 </body>
 </html>
