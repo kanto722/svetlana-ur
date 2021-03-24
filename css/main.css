@@ -1719,8 +1719,13 @@ cursor: pointer;
   .job-item:nth-child(4) {
     margin-right: 20px;
   }
-
-
+  .dolg-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .dolg-block {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1836,6 +1841,9 @@ cursor: pointer;
     margin-right: 0;
     margin-top: 40px;
   }
+  .consult {
+    padding-bottom: 40px;
+  }
 
 }
 @media screen and (max-width: 992px){
@@ -1890,6 +1898,45 @@ cursor: pointer;
   .key-job {
     padding-bottom: 90px;
   }
+  .team-item img {
+    width: 100%;
+  }
+  .team-title {
+    font-size: 35px;
+  }
+  .dolg-title {
+    font-size: 35px;
+  }
+  .dolg-content {
+    margin-top: 47px;
+  }
+  .primer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .primer-item {
+    margin-bottom: 40px;
+    width: 480px;
+  }
+  .primer-item a img {
+    width: 100%;
+  }
+  .primer-title {
+    font-size: 35px;
+  }
+  .dolg {
+    padding-bottom: 80px;
+  }
+  .primer-item-text {
+    padding-left: 10px;
+  }
+  .primer-item-do {
+    padding-left: 10px;
+  }
+  .primer-item-dolg {
+    padding-left: 10px;
+  }
 }
 @media screen and (max-width: 768px) {
   .header-nav-adapt {
@@ -1939,6 +1986,53 @@ cursor: pointer;
   .consult-info p {
     max-width: 100%;
   }
+  .team-container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .dolg-block-one-elem2 p {
+    width: 460px;
+    font-size: 20px;
+  }
+  .dolg-block-two-elem2 p {
+    width: 460px;
+    font-size: 20px;
+  }
+  /* .dolg-block-one {
+    flex-direction: column;
+    align-items: center;
+  }
+  .dolg-block-two {
+    flex-direction: column;
+    align-items: center;
+  } */
+  .dolg-block-one-elem1 p {
+    font-size: 35px;
+    padding: 23px 0px;
+    width: 125px;
+  }
+  .dolg-block-two-elem1 p {
+    font-size: 35px;
+    padding: 23px 0px;
+    width: 125px;
+  }
+  .dolg-block-one-elem2 p {
+    width: 320px;
+    font-size: 16px;
+  }
+  .dolg-block-two-elem2 p {
+    width: 320px;
+    font-size: 16px;
+
+  }
+  .primer {
+    padding-bottom: 50px;
+  }
+  .primer-item {
+    width: 440px;
+  }
+  
 }
 @media screen and (max-width: 480px) {
   .header-nav-adapt {
@@ -2015,6 +2109,105 @@ cursor: pointer;
   .consult-info p {
     max-width: 300px;
   }
+  .team-item {
+    margin-right: 0;
+  }
+  .dolg-block-one-elem1 p {
+    font-size: 25px;
+    padding: 12px 0px;
+    width: 100%;
+    height: 76px;
+    background: none;
+    box-shadow: none;
+  }
+  .dolg-block-one-elem1 {
+    background: #FAFAFA;
+    box-shadow: -2px 4px 10px rgb(0 0 0 / 15%);
+    width: 320px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .dolg-block-two-elem1 p {
+    font-size: 25px;
+    padding: 12px 0px;
+    width: 100%;
+    height: 76px;
+    background: none;
+    box-shadow: none;
+  }
+  .dolg-block-two-elem1 {
+    background: #FAFAFA;
+    box-shadow: -2px 4px 10px rgb(0 0 0 / 15%);
+    width: 320px;
+    margin-right: 0;
+    margin-bottom: 10px;
+
+  }
+  .dolg-block-one-elem2 p {
+    width: 100%;
+    padding-top: 0px;
+    height: 100%;
+    background: none;
+    box-shadow: none;
+  }
+  .dolg-block-one-elem2 p br {
+    display: none;
+  }
+  .dolg-block-two-elem2 p {
+    width: 100%;
+    padding-top: 0px;
+    height: 100%;
+    background: none;
+    box-shadow: none;
+  }
+  .dolg-block-one-elem2 {
+    margin-right: 0;
+    padding: 20px 10px;
+    background: #FAFAFA;
+    box-shadow: -2px 4px 10px rgb(0 0 0 / 15%);
+    width: 320px;
+  }
+  .dolg-block-two-elem2 {
+    margin-right: 0;
+    padding: 20px 10px;
+    background: #FAFAFA;
+    box-shadow: -2px 4px 10px rgb(0 0 0 / 15%);
+    width: 320px;
+  }
+  .dolg-block-one {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dolg-block-two {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .primer-content {
+    margin-top: 50px;
+  }
+  .primer-item-text span {
+    font-size: 20px;
+  }
+  .primer-item-text p {
+    font-size: 16px;
+  }
+  .primer-item-do p {
+    font-size: 16px;
+  }
+  .primer-item-dolg p {
+    font-size: 16px;
+  }
+  .primer-item-do {
+    margin-top: 10px;
+  }
+  .primer-item-dolg {
+    margin-top: 10px;
+  }
+  .primer-item {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -2073,5 +2266,36 @@ cursor: pointer;
   }
   .consult-info h2 {
     font-size: 20px;
+  }
+  .team-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .team {
+    padding-top: 40px;
+  }
+  .dolg-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .dolg-content {
+    margin-top: 30px;
+  }
+  .dolg-block-one-elem1 {
+    width: 280px;
+  }
+  .dolg-block-one-elem2 {
+    width: 280px;
+  }
+  .dolg-block-two-elem1 {
+    width: 280px;
+
+  }
+  .dolg-block-two-elem2 {
+    width: 280px;
+  }
+  .primer-title {
+    font-size: 30px;
+    text-align: center;
   }
 }
