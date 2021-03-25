@@ -26,3 +26,22 @@ function openPopup() {
     });
 }
 
+function burger() {
+    $('.header-nav-adapt').addClass('header-nav-adapt__active');
+    $('.burger-img').addClass('burger-img__disable');
+    $('.close-img').addClass('close-img__active');
+    $(document).mouseup(function (e) {
+        var container = $(".header-nav-adapt");
+        if (container.has(e.target).length === 0){
+            $('.header-nav-adapt').removeClass('header-nav-adapt__active');
+            $('.burger-img').removeClass('burger-img__disable');
+            $('.close-img').removeClass('close-img__active');
+        }
+    });
+}
+
+function burgerClose() {
+    $('.header-nav-adapt').removeClass('header-nav-adapt__active');
+    $('.burger-img').removeClass('burger-img__disable');
+    $('.close-img').removeClass('close-img__active');
+}

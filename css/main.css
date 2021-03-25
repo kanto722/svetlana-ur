@@ -1456,11 +1456,13 @@ width: 339px;
   color: #000000;
 }
 
-
+.header-nav-adapt {
+  display: none;
+}
 .popup {
   position: fixed;
   z-index: 10000;
-  top: 13%;
+  top: 2%;
   right: 0;
   left: 32%;
   width: 38%;
@@ -1628,9 +1630,10 @@ text-decoration: underline;
 
 }
 
-.header-nav-adapt {
-  display: none;
+.header-nav-adapt__active {
+  right: 0;
 }
+
 .burger-img {
   position: absolute;
   top: 30px;
@@ -1644,15 +1647,17 @@ cursor: pointer;
   width: 50px;
   position: absolute;
   top: 30px;
-  right: 0;
+  right: 50px;
   opacity: 0;
   pointer-events: none;
-  transition: 0.3s;
   cursor: pointer;
-
+  transition: 0.6s;
 }
 .header-cont {
   display: flex;
+}
+.popup-send {
+  border: none;
 }
 
 @media screen and (max-width: 1430px) {
@@ -1755,7 +1760,12 @@ cursor: pointer;
       height: 100vh;
       z-index: 10;
       padding-top: 50px;
+      transition: 0.4s;
 
+  }
+  .header-nav-adapt__active {
+    right: 0;
+    transition: 0.4s;
   }
   .header-nav {
     margin-right: 0;
@@ -1844,7 +1854,37 @@ cursor: pointer;
   .consult {
     padding-bottom: 40px;
   }
-
+  .zayavk-container  {
+    flex-direction: column;
+  }
+  .zayavk-content {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .zayavk-forma p {
+    width: 100%;
+  }
+  .zayavk-forma {
+    align-items: center;
+  }
+  .unknow {
+    padding-bottom: 0;
+  }
+  .burger-img__disable {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  .close-img__active {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.6s;
+  }
+  .popup {
+    left: 19%;
+  }
 }
 @media screen and (max-width: 992px){
   .promo-content {
@@ -1936,6 +1976,57 @@ cursor: pointer;
   }
   .primer-item-dolg {
     padding-left: 10px;
+  }
+  .range {
+    width: 100%;
+  }
+  .container h2 {
+    font-size: 35px;
+  }
+  .primer {
+    padding-bottom: 50px;
+  }
+  .unknow {
+    padding-top: 0;
+  }
+  .unknow-title {
+    font-size: 35px;
+  }
+  .unknow-item {
+    width: 600px;
+  }
+  .unknow-drop {
+    width: 560px;
+  }
+  .book-item {
+    width: 60px;
+    height: 80px;
+  }
+  .zayavk-content h2 {
+    font-size: 35px;
+  }
+  .navigation-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation-link {
+    align-items: center;
+    margin-bottom: 30px;
+    order: 0;
+  }
+  .navigation {
+    padding-top: 55px;
+  }
+  .navigation-text {
+    order: 2;
+  }
+  .navigation-tel {
+    order: 1;
+    margin-bottom: 20px;
+  }
+  .popup {
+    left: 13%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2032,7 +2123,63 @@ cursor: pointer;
   .primer-item {
     width: 440px;
   }
-  
+  .unknow-item {
+    width: 100%;
+    flex-direction: column;
+    padding: 16px 10px 16px 10px;
+    height: 200px;
+    margin-bottom: 336px;
+  }
+  .unknow-drop {
+    width: 95%;
+  }
+  .unknow-link {
+    justify-content: center;
+  }
+  .unknow-item-block {
+    text-align: center;
+  }
+  .unknow-item-block p {
+    font-size: 20px;
+  }
+  .unknow-drop__active {
+    top: 187px;
+  }
+  .zayavk-content h2 {
+    width: 100%;
+  }
+  .zayavk-content-form p {
+    width: 100%;
+  }
+  .zayavk-input {
+    width: 100%;
+  }
+  .maps-wrap {
+    padding: 24px 20px 25px 32px;
+    display: flex;
+    flex-direction: column;
+  }
+  .maps-block {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+.popup {
+  left: 0;
+  width: 100%;
+}
+.popup-container img {
+  width: 60%;
+}
+.popup-container {
+  padding: 58px 25px 48px 25px;
+  width: 100%;
+}
+.popup-input {
+  width: 100%;
+}
 }
 @media screen and (max-width: 480px) {
   .header-nav-adapt {
@@ -2208,6 +2355,129 @@ cursor: pointer;
   .primer-item {
     width: 100%;
   }
+
+  .form-group p {
+    margin-bottom: 20px;
+  }
+  .price-sobst {
+    margin-top: 37px;
+    margin-bottom: 35px;
+  }
+  .price-sobst p {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .price-credit p {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .price-credit {
+    margin-bottom: 30px;
+  }
+  .price-form p {
+    font-size: 20px;
+  }
+  .price-form input {
+    padding: 10px 0px 10px 12px;
+    font-size: 20px;
+  }
+  .price-form input::placeholder {
+    font-size: 20px;
+  }
+  .policy-price {
+    font-size: 16px;
+  }
+  .form-group p {
+    font-size: 20px;
+  }
+  .input-value {
+    padding: 12px 0px 12px 13px;
+    font-size: 20px;
+  }
+  .input-send-price {
+    width: 280px;
+  }
+  .range {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .team-item {
+    margin-right: 0;
+  }
+  .price-sobst__radio {
+    justify-content: center;
+  }
+  .price-credit__radio {
+    justify-content: center;
+  }
+  .price-form {
+    text-align: center;
+  }
+  .price-sobst p {
+    text-align: center;
+  }
+  .price-credit p {
+    text-align: center;
+  }
+
+.unknow-content {
+  margin-top: 30px;
+}
+.book-item {
+  height: 60px;
+  margin-right: 0;
+}
+.unknow-item-block {
+  width: 100%;
+}
+.line2 {
+  width: 100%;
+}
+.unknow-drop {
+  right: 6px;
+  padding: 26px 10px 25px 10px;
+
+}
+.unknow-item {
+  margin-bottom: 400px;
+}
+.zayavk-content h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.zayavk-container {
+  padding: 30px 20px 40px 20px;
+
+}
+.zayavk-send {
+  width: 100%;
+}
+
+.navigation {
+  padding-top: 35px;
+}
+.navigation-text {
+  text-align: center;
+} 
+.popup-text {
+  text-align: center;
+}
+.popup-container {
+  padding: 27px 20px 35px 20px;
+
+}
+.popup  {
+  top: 8%;
+}
+.popup-send {
+  border: none;
+}
+.key {
+  padding-top: 130px;
+
+}
 }
 
 @media screen and (max-width: 375px) {
@@ -2297,5 +2567,68 @@ cursor: pointer;
   .primer-title {
     font-size: 30px;
     text-align: center;
+  }
+  .container {
+    text-align: center;
+  }
+  .container h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .price-sobst__radio {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .price-credit__radio {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .unknow-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .zayavk-send {
+    font-size: 16px;
+    padding: 21px 10px 20px 13px;
+
+  }
+  .zayavk-input {
+    font-size: 16px;
+    padding: 15px 0px 15px 15px;
+  }
+  .zayavk-input::placeholder {
+    font-size: 16px;
+  }
+  .zayavk-content {
+    width: 100%;
+  }
+  .maps-wrap {
+    padding: 24px 10px 25px 15px;
+
+  }
+  .maps-adress-text p br {
+    display: none;
+  }
+  .popup-name {
+    padding: 14px 0px 14px 13px;
+    font-size: 16px;
+  }
+  .popup-name::placeholder {
+    font-size: 16px;
+  }
+  .popup-phone{
+    padding: 14px 0px 14px 13px;
+    font-size: 16px;
+  }
+  .popup-phone::placeholder{
+    font-size: 16px;
+
+  }
+  .popup-container img {
+    display: none;
+  }
+  .promo {
+    height: 100vh;
+
   }
 }
