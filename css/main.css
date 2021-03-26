@@ -38,7 +38,9 @@ body {
   /* align-items: center; */
   /* justify-content: center; */
 }
-
+.promo-img-adapt {
+  display: none;
+}
 .range {
   display: flex;
   flex-direction: column;
@@ -95,7 +97,9 @@ body {
   margin-bottom: 15px;
 }
 
-
+.adapt-img-480 {
+  display: none;
+}
 
 .input-polz {
   /* border: 1px solid #000000;
@@ -392,7 +396,7 @@ cursor: pointer;
   background-repeat: no-repeat;
   background-position: top center;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   padding-top: 50px;
 
 }
@@ -1807,11 +1811,12 @@ cursor: pointer;
     font-size: 42px;
   }
   .promo-content-form h2 {
-    font-size: 26px;
+    font-size: 22px;
+    line-height: 32px;
   }
   .promo-content-form {
-    width: 470px;
-    padding: 39px 20px 42px 20px;
+    width: 430px;
+    padding: 20px 15px 30px 15px;
 
   }
   .form {
@@ -1891,6 +1896,8 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: translateY(-31px);
+
   }
   .promo {
     background-position: center right 9%;
@@ -2027,6 +2034,29 @@ cursor: pointer;
   }
   .popup {
     left: 13%;
+  }
+  .promo {
+    background: linear-gradient(0deg, #E4E4E4, #E4E4E4), #E3E3E3;
+    display: flex;
+    /* flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center; */
+    justify-content: center;
+    position: relative;
+    padding-top: 0;
+  }
+  .promo-img-adapt {
+    display: block;
+    width: 390px;
+    /* transform: translateY(-104px); */
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+
+  }
+
+  .promo-content {
+    padding-top: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2179,6 +2209,9 @@ cursor: pointer;
 }
 .popup-input {
   width: 100%;
+}
+.promo {
+  justify-content: flex-start;
 }
 }
 @media screen and (max-width: 480px) {
@@ -2475,12 +2508,30 @@ cursor: pointer;
   border: none;
 }
 .key {
-  padding-top: 130px;
+  padding-top: 40px;
 
+}
+.promo-img-adapt {
+  width: 200px;
+  display: none;
+}
+.promo {
+  flex-direction: column-reverse;
+  height: 100vh;
+}
+.adapt-img-480 {
+  display: block;
+  background: linear-gradient(
+0deg
+, #E4E4E4, #E4E4E4), #E3E3E3;
+}
+.promo-img-adapt2 {
+  width: 100%;
 }
 }
 
 @media screen and (max-width: 375px) {
+  .promo-content {}
   .promo-content h1 {
     font-size: 24px;
   }
